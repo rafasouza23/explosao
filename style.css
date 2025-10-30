@@ -1,0 +1,61 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/736x/a1/f9/93/a1f993bee6014bb883ef772cc484c43c.jpg);
+    background-size: 100% 100%;
+}
+#monica{
+    width: 300px;
+    height: 300px;
+    background-image: url(https://pa1.aminoapps.com/7323/fca3e1c509075b96f887d9de1612286e33c21caar1-720-540_00.gif);
+    background-size: 100% 100%;
+}
+#quadrado{
+    width: 200px;
+    height: 200px;
+    background-image: url(https://i.pinimg.com/originals/a8/fa/6b/a8fa6b5667d11b2d78d3c3834742b907.gif);
+
+    /* atalho: nome, duração, ritmo e repetições */
+    /* animation: buraconegro 5s ease-in-out infinite; */
+    animation: explodir 8s linear infinite;
+}
+
+/* criando uma animação */
+/* @keyframes buraconegro{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(0.5);
+        background-color: aqua;
+        border-radius: 25%;
+    }
+    75%{
+        transform: scale(0);
+        background-color: gold;
+        border-radius: 50%;
+    }
+    100%{
+        transform: scale(1);
+        background-color: black;
+    }
+} */
+
+@keyframes explodir{
+    0%{
+        border: none;
+    }
+    50%{
+        background-image: url(https://i.pinimg.com/originals/9d/1a/9d/9d1a9df0ec27d025b8f3d21a9bf4e561.gif) ;
+        background-size: 100% 100%;
+        border: none;
+        transform: translateX(100px);
+    }
+    100%{
+        display: none;
+        border: none;
+    }
+}
